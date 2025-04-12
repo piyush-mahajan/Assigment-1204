@@ -145,7 +145,16 @@ const App = () => {
       <Typography variant="h4" align="center" gutterBottom>
         Won ACV mix by Cust Type
       </Typography>
-      <Grid container spacing={3}>
+
+      <Grid
+        container
+        direction="row"
+        sx={{
+          justifyContent: "center",
+          alignItems: "flex-start",
+        }}
+      >
+        {/* <Grid direction="row" container spacing={3}> */}
         <Grid sx={{ width: { xs: "100%", md: "50%" } }}>
           <DataCard
             title="Bar Chart"
